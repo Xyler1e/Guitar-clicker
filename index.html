@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<HTML>
+  
+  <head>
+    <title>Clicker Game</title>
+    
+<link rel="stylesheet" href="main.css">
+  </head>
+  
+  <body>
+<div class="sectionLeft">
+  <center>
+   <div class="scoreContainer unselectable">
+     <span id="score">0</span> strings<br>
+     <span id="scorepersecond">0</span> strings per second
+   </div>
+   <br>
+   <div class="clickerContainer unselectable">
+    <img src="images/click.png" height="256px" width="256" onclick="game.addToScore(game.clickValue)">
+    </div>
+    </center>
+    
+    <div class ="selectionFooter unselectable">
+      <button onclick="saveGame();">Save Game</button>
+      <h5>Bass Guitar Clicker</h5>
+      <button onclick="resetGame();">Reset Game</button>
+      </div>
+    </div>
+    
+    <div class="sectionRight unselectable" id="shopContainer">
+    </div>
+    
+   <script src="main.js"></script>
+
+  </body>
+</HTML>
